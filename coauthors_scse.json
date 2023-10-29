@@ -1,0 +1,1461 @@
+[
+    {
+        "name": "A S Madhukumar",
+        "coauthors": [
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Alexei Sourin",
+        "coauthors": []
+    },
+    {
+        "name": "Anupam Chattopadhyay",
+        "coauthors": [
+            {
+                "coauthor_name": "Arvind Easwaran",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Anwitaman Datta",
+        "coauthors": [
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 13
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Arvind Easwaran",
+        "coauthors": [
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 5
+            }
+        ]
+    },
+    {
+        "name": "Bo An",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Cham Tat Jen",
+        "coauthors": [
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 14
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Chan Syin",
+        "coauthors": [
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Chee Wei Tan",
+        "coauthors": [
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Chen Change Loy",
+        "coauthors": [
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 7
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Chia Liang Tien",
+        "coauthors": [
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 41
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Chng Eng Siong",
+        "coauthors": [
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Cong Gao",
+        "coauthors": [
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 19
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 16
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Cong Gao",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Deepu Rajan",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Chng Eng Siong",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Dmitrii Ustiugov",
+        "coauthors": []
+    },
+    {
+        "name": "Douglas Leslie Maskell",
+        "coauthors": []
+    },
+    {
+        "name": "Dusit Niyato",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 45
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 35
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 7
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 7
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "A S Madhukumar",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Erik Cambria",
+        "coauthors": [
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 21
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Chng Eng Siong",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Goh Wooi Boon",
+        "coauthors": [
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Chng Eng Siong",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Douglas Leslie Maskell",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Guan Cuntai",
+        "coauthors": [
+            {
+                "coauthor_name": "Kwoh Chee Keong",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Kwoh Chee Keong",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Chng Eng Siong",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "He Ying",
+        "coauthors": [
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 19
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Wen Yonggang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Kwoh Chee Keong",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Huang Shell Ying",
+        "coauthors": []
+    },
+    {
+        "name": "Hui Siu Cheung",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Jagath Chandana Rajapakse",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Lu Shijian",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Josephine Chong",
+        "coauthors": []
+    },
+    {
+        "name": "Joty Shafiq Rayhan",
+        "coauthors": [
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Kwoh Chee Keong",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 21
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 6
+            }
+        ]
+    },
+    {
+        "name": "Lam Kwok Yan",
+        "coauthors": []
+    },
+    {
+        "name": "Lam Siew Kei",
+        "coauthors": [
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Thambipillai Srikanthan",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Lau Chiew Tong",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 3
+            },
+            {
+                "coauthor_name": "A S Madhukumar",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Lee Bu Sung",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 99
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Oh Hong Lye",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Li Yi",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Anwitaman Datta",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Li Boyang",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Li Fang",
+        "coauthors": []
+    },
+    {
+        "name": "Li Mo",
+        "coauthors": [
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Li Yi",
+        "coauthors": []
+    },
+    {
+        "name": "Lin Guosheng",
+        "coauthors": [
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Lin Shang-Wei",
+        "coauthors": []
+    },
+    {
+        "name": "Lin Weisi",
+        "coauthors": [
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Kwoh Chee Keong",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Liu Weichen",
+        "coauthors": []
+    },
+    {
+        "name": "Liu Yang",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 32
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 21
+            },
+            {
+                "coauthor_name": "Liu Weichen",
+                "times": 12
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Liu Ziwei",
+        "coauthors": [
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Liu Weichen",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Loke Yuan Ren",
+        "coauthors": []
+    },
+    {
+        "name": "Long Cheng",
+        "coauthors": []
+    },
+    {
+        "name": "Lu Shijian",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Cong Gao",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Luke Ong \uff08\u7fc1\u4e4b\u660a\uff09",
+        "coauthors": []
+    },
+    {
+        "name": "Luo Jun",
+        "coauthors": [
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Luo Siqiang",
+        "coauthors": [
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Luu Anh Tuan",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Miao Chun Yan",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 91
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 70
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 19
+            },
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 16
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 7
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Liu Weichen",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Mohamed M. Sabry",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 3
+            }
+        ]
+    },
+    {
+        "name": "Oh Hong Lye",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Ong Chin Ann",
+        "coauthors": []
+    },
+    {
+        "name": "Ong Yew Soon",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 14
+            },
+            {
+                "coauthor_name": "Kwoh Chee Keong",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Owen Noel Newton Fernando",
+        "coauthors": [
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Pan Xingang",
+        "coauthors": []
+    },
+    {
+        "name": "Pan, Sinno Jialin",
+        "coauthors": [
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Qian Kemao",
+        "coauthors": []
+    },
+    {
+        "name": "Quek Hiok Chai",
+        "coauthors": [
+            {
+                "coauthor_name": "Guan Cuntai",
+                "times": 18
+            },
+            {
+                "coauthor_name": "Deepu Rajan",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Douglas Leslie Maskell",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Douglas Leslie Maskell",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Seah Hock Soon",
+        "coauthors": [
+            {
+                "coauthor_name": "Qian Kemao",
+                "times": 13
+            },
+            {
+                "coauthor_name": "Zheng Jianmin",
+                "times": 5
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Alexei Sourin",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Shen Zhiqi",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 62
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Lin Guosheng",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Siyuan Liu",
+        "coauthors": []
+    },
+    {
+        "name": "Smitha K G",
+        "coauthors": []
+    },
+    {
+        "name": "Sun Aixin",
+        "coauthors": [
+            {
+                "coauthor_name": "Anwitaman Datta",
+                "times": 13
+            },
+            {
+                "coauthor_name": "Wei Ying",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Tan Rui",
+        "coauthors": []
+    },
+    {
+        "name": "Tang Xueyan",
+        "coauthors": [
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 6
+            }
+        ]
+    },
+    {
+        "name": "Thambipillai Srikanthan",
+        "coauthors": [
+            {
+                "coauthor_name": "Douglas Leslie Maskell",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Anupam Chattopadhyay",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Vidya Sudarshan",
+        "coauthors": []
+    },
+    {
+        "name": "Vun Chan Hua, Nicholas",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Oh Hong Lye",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Wai Kin Adams Kong",
+        "coauthors": [
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Wang Wenya",
+        "coauthors": []
+    },
+    {
+        "name": "Wee Keong NG",
+        "coauthors": [
+            {
+                "coauthor_name": "Li Fang",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Anwitaman Datta",
+                "times": 2
+            }
+        ]
+    },
+    {
+        "name": "Wei Yang Bryan Lim",
+        "coauthors": [
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 65
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 7
+            }
+        ]
+    },
+    {
+        "name": "Wei Ying",
+        "coauthors": []
+    },
+    {
+        "name": "Wen Yonggang",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 12
+            },
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Luo Jun",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Wentong Cai",
+        "coauthors": []
+    },
+    {
+        "name": "Yeo Chai Kiat",
+        "coauthors": [
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 28
+            },
+            {
+                "coauthor_name": "Li Yi",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Oh Hong Lye",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Yu Han",
+        "coauthors": [
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 35
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 11
+            },
+            {
+                "coauthor_name": "Zhang Jie",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhao Jun",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Zhang Hanwang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Zhang Hanwang",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Zhang Jie",
+        "coauthors": [
+            {
+                "coauthor_name": "Sun Aixin",
+                "times": 9
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 8
+            },
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 7
+            },
+            {
+                "coauthor_name": "Long Cheng",
+                "times": 6
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Zhang Tianwei",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Anwitaman Datta",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Zhang Tianwei",
+        "coauthors": [
+            {
+                "coauthor_name": "Yu Han",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Zhao Jun",
+        "coauthors": [
+            {
+                "coauthor_name": "Dusit Niyato",
+                "times": 45
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 4
+            },
+            {
+                "coauthor_name": "Tan Rui",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 3
+            },
+            {
+                "coauthor_name": "Li Boyang",
+                "times": 2
+            },
+            {
+                "coauthor_name": "Yu Han",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Liu Yang",
+                "times": 1
+            },
+            {
+                "coauthor_name": "Li Fang",
+                "times": 1
+            }
+        ]
+    },
+    {
+        "name": "Zheng Jianmin",
+        "coauthors": []
+    },
+    {
+        "name": "Zinovi Rabinovich",
+        "coauthors": [
+            {
+                "coauthor_name": "Yeo Chai Kiat",
+                "times": 2
+            }
+        ]
+    }
+]

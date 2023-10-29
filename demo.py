@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from warehouse import get_list_of_keywords,find_name_using_keyword, get_keywords_given_name,find_num_contributions_using_name
-from warehouse import plot_year_of_involvement
-# Config
+from utils import get_list_of_keywords, find_name_using_keyword, get_keywords_given_name,find_num_contributions_using_name
+from utils import plot_year_of_involvement, plot_scse_bar, display_overall_graph, display_individual_graph
+from utils import display_publications_by_year, display_publications_by_type, display_top_n_keywords, faculty_intro
 
+# Config
 st.set_page_config(
     page_title="SCSE Dashboard",
     page_icon="🚀",
@@ -12,54 +13,74 @@ st.set_page_config(
 )
 
 # Load data from CSV
-data = pd.read_csv('professors_new.csv')
+data = pd.read_csv('professors_new.csv',encoding='unicode_escape')
 
-smiley = "😄"  # Smiley emoji
-star = "⭐"    # Star emoji
-hi = "Hi 👋"   # Hand waving emoji
+smiley = "😄"
+star = "⭐"  
+hi = "Hi 👋"  
 email_emoji = "📧"
 school = "🏫"
 link_emoji = "🔗"
 paper = "📚"
 
-# Cover page
-faculty_intro = """
+# Page header
+page_intro = """
 Welcome to the NTU School of Computer Science and Engineering Faculty Dashboard. 
 Here, you can explore information about our esteemed professors!
 """
-intro_with_icons = f"{smiley}{hi}{faculty_intro}{star} "
+intro_with_icons = f"{smiley}{hi}{page_intro}{star}  \n Please begin by choosing the topic(s) from the sidebar. You may view the professors' individual profiles on the professor tab."
 st.title("SCSE Dashboard")
 st.markdown(intro_with_icons, unsafe_allow_html=True)
 
-# Create a professor selection dropdown
-selected_tab = st.sidebar.radio("Select a page",["Home", "Professors"])
-tab_content = st.empty()
+# Create a topic selection dropdown
+with st.sidebar:
+    options = st.multiselect(
+                'Selected topics',
+                get_list_of_keywords(),
+                [])
+    st.subheader('List of professors')
+    list_of_professors = find_name_using_keyword(options)
+    for item in list_of_professors:
+        st.write(item)
 
-# Define the content for each tab
-if selected_tab == "Home":
 
-    col1, col2 = st.columns(2,gap='large')
+# Create two tabs
+tab1, tab2 = st.tabs(["💻SCSE", "✒️Professors"])
+
+with tab1:
+    col1, col2 = st.columns([0.4,0.6])
     with col1:
-        options = st.multiselect(
-            'Selected topics',
-            get_list_of_keywords(),
-            [])
-        st.subheader('List of professors')
-        for item in find_name_using_keyword(options):
-            st.write(item)
-            
+        with st.expander("Introduction"):
+            st.markdown(faculty_intro)
+        display_top_n_keywords()
+       
+
     with col2:
+        subcol4,subcol5,subcol6 = st.columns(3)
+        with subcol4:
+            st.metric("World Ranking","No. 4",delta=3)
+        with subcol5:
+            st.metric("Top 2% Scientists","31")
+        with subcol6:
+            st.metric("Research Projects","S$300m")
+        plot_scse_bar()
+        display_overall_graph()
+    
+        
         # selected_keyword = st.selectbox("Which topic?", options=list_of_keywords)
         # st.write('You selected:', find_name_using_keyword([selected_keyword]))
-        st.markdown("#")
+       
 
 
 #==================================================================================================================  
-elif selected_tab == "Professors":
-   
+# Professor page
+with tab2:
     col1, col2 = st.columns(2,gap='large')
     with col1:
-        selected_professor = st.selectbox("Which professor's information would you like to view?", data['Full Name'])
+        if list_of_professors:
+            selected_professor = st.selectbox("Which professor's information would you like to view?", list_of_professors)
+        else:
+            selected_professor = st.selectbox("Which professor's information would you like to view?", data['Full Name'])
 
         # Filter data based on selected professor or keyword
         if selected_professor:
@@ -75,10 +96,15 @@ elif selected_tab == "Professors":
                 dblp_url = None
             else:
                 dblp_url = professor_data['DBLP URL'].iloc[0]
-            
             biography = professor_data['biography'].iloc[0]
             citation = professor_data['Citations (All)'].iloc[0] 
             no_citation = int(citation) if not pd.isna(citation) else None
+            publications_count = professor_data['publications_count'].iloc[0]
+            publications_count = int(publications_count) if not pd.isna(publications_count) else None
+            top_conference_count = professor_data['top_conference_count'].iloc[0]
+            top_conference_count = int(top_conference_count) if not pd.isna(top_conference_count) else None
+
+
         else:
             professor_data = data
 
@@ -86,7 +112,7 @@ elif selected_tab == "Professors":
         if professor_data.empty:
             st.warning("No professor found with the given selection.")
         else:
-            st.subheader("Professor Details")
+            st.subheader("Professor Details",divider='rainbow')
             st.markdown(f"{email_emoji} **Email:** {email}")
             st.markdown(f"{school} **DR-NTU:** {DRNTU_url}")
             if dblp_url:
@@ -103,17 +129,24 @@ elif selected_tab == "Professors":
             
             # Publications
             st.subheader("Publications",divider='rainbow')
-            tab1, tab2 = st.tabs(["By year","By type"])
-            # with tab1:
-
-            # with tab2:
+            subtab1, subtab2 = st.tabs(["By year","By type"])
+            with subtab1:
+                display_publications_by_year(selected_professor)
+            with subtab2:
+                display_publications_by_type(selected_professor)
                     
     with col2:
         # Display bar chart   
-        st.metric("Total Citations",no_citation)
+        subcol1,subcol2,subcol3 = st.columns(3)
+        with subcol1:
+            st.metric("Citations",no_citation)
+        with subcol2:
+            st.metric("Publications",publications_count)
+        with subcol3:
+            st.metric("Top Conferences",top_conference_count)
         count_publications = find_num_contributions_using_name(selected_professor)    
         plot_year_of_involvement(count_publications[0]) 
-
+        display_individual_graph(selected_professor)
 
             
        
