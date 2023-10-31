@@ -7,7 +7,7 @@ import networkx as nx
 import igviz as ig
 
 
-conn_str = "mongodb+srv://jingfang61:324UnxOg84pVLj9E@cluster0.h2vp8rc.mongodb.net/"
+conn_str = "" #mongoDB connection string
 client = pymongo.MongoClient(conn_str, serverSelectionTimeoutMS=5000)
 db = client['scsedash']
 
