@@ -6,9 +6,17 @@ import streamlit as st
 import networkx as nx
 import igviz as ig
 
+
 conn_str = "mongodb+srv://jingfang61:324UnxOg84pVLj9E@cluster0.h2vp8rc.mongodb.net/"
 client = pymongo.MongoClient(conn_str, serverSelectionTimeoutMS=5000)
 db = client['scsedash']
+
+def get_research_areas():
+    f = open ('./data/research_areas.json', "r")
+    broader_to_specific_areas = json.loads(f.read())
+    f.close()
+    return dict(broader_to_specific_areas)
+
 
 def find_name_using_keyword(keywords=[]):
     '''
@@ -81,7 +89,7 @@ def plot_year_of_involvement(data):
     }
 
     # Create the stacked bar chart
-    fig = px.bar(df, x='Year', y=list(contribution_types), title=f'{data["name"]} - Year of Involvement',
+    fig = px.bar(df, x='Year', y=list(contribution_types), title=f'{data["name"]}',
                  labels={'value': 'Number of Contributions', 'variable': 'Contribution Type'},
                  barmode='relative',color='variable', color_discrete_map=custom_color_scale)
 
@@ -99,7 +107,10 @@ def find_publications(name):
     data = []
     for dic in cursor:
         data.append(dic)
-    return data[0]
+    if len(data) == 0:
+        return print("Sorry, currently no publication data is found.")
+    else:
+        return data[0]
 
 
 def display_publications_by_year(name):
@@ -142,21 +153,33 @@ def display_publications_by_type(name):
                                     f"**Conference/Venue:** {paper['conference_name']}  \n"
                                     f"**URL:** {paper['url']}")
 
+def display_top_coauthors(name):
+    f = open ('./data/coauthors.json', "r")
+    data = json.loads(f.read())
+    f.close()
+    st.subheader("Top Coauthors")
+    selected_value = st.slider("Number of coauthors:", min_value=1, max_value=10, value=5, step=1)
+    st.write(f"**Top {selected_value} Coauthors for {name} (based on DBLP)**")
+
+    for professor in data:
+        if professor["name"] == name:
+            coauthors = professor["coauthors"]
+    for i, coauthor in enumerate(coauthors[:selected_value]):
+        st.write(f"{i+1}. {coauthor['coauthor_name']} - {coauthor['times']} collaborations")
+    st.markdown("#")
+
 
 def plot_scse_bar():
-    df = pd.read_csv('keywords_count.csv')
-    df = df[1:]
-
-    # Create an interactive Plotly bar chart
+    df = pd.read_csv('./data/research_area_with_counts.csv')
+    df = df.sort_values(by='Number of Professors', ascending=False)
     fig = px.bar(df, 
-                 x='keywords', 
-                 y='prof_count', 
-                 color='keywords',
-                 labels={'keywords': 'Keyword', 'prof_count': 'Number of Professors'})
+                 x='Broader Area', 
+                 y='Number of Professors', 
+                 color='Broader Area',
+                 labels={'Broader Area': 'Broader Area', 'Number of Professors': 'Number of Professors'})
 
-    # Customize the layout of the graph
     fig.update_layout(
-        title="Keywords Ranked by Number of Professors",
+        title="Research Area Ranked by Number of Professors",
         xaxis_tickangle=-45,
     )
     for trace in fig.data:
@@ -166,15 +189,17 @@ def plot_scse_bar():
 
 
 def display_top_n_keywords():
-    df = pd.read_csv('keywords_count.csv')
+    df = pd.read_csv('./data/keywords_count.csv')
     df = df[1:]
+    st.markdown(f"#### Top Keywords")
+    st.markdown("Use the slider to select and display keywords associated with the highest number of professors participating in the research.")
     selected_value = st.slider("Number of Keywords", min_value=1, max_value=len(df), value=10, step=1)
     # Display the top keywords
-    st.markdown(f"#### Top Keywords:")
     st.write(df.head(selected_value))
 
+
 def build_adjacency_matrix():
-    f = open ('coauthors_scse.json', "r")
+    f = open ('./data/coauthors_scse.json', "r")
     filtered_professors_data = json.loads(f.read())
     f.close()
     # plot overall network
@@ -200,15 +225,16 @@ def build_adjacency_matrix():
     G = nx.Graph(adjacency_matrix)
     return G, adjacency_matrix
 
+
 def display_overall_graph():
     G, _ = build_adjacency_matrix()
 
     nx.set_node_attributes(G, 3, "prop")
     nx.set_edge_attributes(G, 5, "edge_prop")
 
-    fig = ig.plot(G,title="SCSE Network Graph")
+    fig = ig.plot(G,title="SCSE Network Graph", layout="circular", colorscale='YlOrRd')
     st.plotly_chart(fig, use_container_width=True)
-
+  
 
 def display_individual_graph(professor_name):
     subgraph = nx.Graph()
@@ -241,11 +267,12 @@ def display_individual_graph(professor_name):
     nx.set_edge_attributes(subgraph, 5, "edge_prop")
 
     fig = ig.plot(subgraph, title=f"{professor_name}'s graph",
-            #node_label
             node_label_position="top center",
-            #edge_text=["weight"]) # Display the "edge_prop" attribute on hover over the edge
+            #edge_text=["weight"])
             edge_label="weight", 
-            edge_label_position="bottom center") 
+            edge_label_position="bottom center",
+            layout="circular",
+            colorscale='YlOrRd') 
     st.plotly_chart(fig, use_container_width=True)
 
 

@@ -1,0 +1,113 @@
+{
+    "Hardware & Embedded Systems": [
+        "Electrical and Electronic Engineering",
+        "Disrupting the Future of Industry and Manufacturing",
+        "Computational and Systems Biology",
+        "Semantics of Computation",
+        "Internet of Things",
+        "Frailty: Use of AI-R Tool for Rehabilitation at Home Reducing the Need for Hospital Physiotherapy",
+        "Mechanical & Manufacturing Engineering",
+        "Interface of Biology & Engineering (Engineering in Biology)",
+        "Biomedical Engineering"
+    ],
+    "Computer Networks & Communications": [
+        "Info-Communication Technology",
+        "Data Science",
+        "EdTech & Science Communication",
+        "Biomedical Informatics and Data Science",
+        "Nanotechnology & Nano-Science",
+        "Science, Technology and Society",
+        "Language & Communication"
+    ],
+    "Computer Vision & Language": [
+        "Smart Nation",
+        "Internet & Communications",
+        "Digital Economy",
+        "Data Mining",
+        "Smart Cities",
+        "Neurotechnology",
+        "Social Physics",
+        "Medical Technology",
+        "Mathematics",
+        "Quantum Technology",
+        "Information Sciences and Systems",
+        "Machines & Systems",
+        "Bayesian Statistical Probabilistic Programming",
+        "Security",
+        "Programming Languages",
+        "Neurosymbolic AI",
+        "Commonsense Reasoning",
+        "Distributed Operating Systems",
+        "User Modeling",
+        "Speaker Diarization",
+        "Security Studies & Policy Issues",
+        "Biomedical Sciences & Life Sciences",
+        "Energy",
+        "Technoethics",
+        "Microelectronics & Applications",
+        "Ageing",
+        "Economics",
+        "Neuroscience",
+        "Sociology",
+        "Physics",
+        "Animation",
+        "Mental Health",
+        "Software Agent Technology"
+    ],
+    "Computational Intelligence": [
+        "Brain Image Analysis",
+        "Sentiment Analysis",
+        "Medical Image Analysis"
+    ],
+    "Biomedical Informatics": [
+        "Interactive Digital Media",
+        "Computing Hardware and Architecture",
+        "Parallel and Distributed Computing",
+        "Graphics and Interactive Computing",
+        "Serverless Computing",
+        "Affective Computing",
+        "Cloud Computing",
+        "Interactive Media"
+    ],
+    "Graphics & Interactive Computing": [
+        "Artificial and Augmented Intelligence",
+        "Computational Intelligence",
+        "Artificial Intelligence",
+        "Artificial Intelligence for Drug Discovery",
+        "Edge Intelligence"
+    ],
+    "Cyber Security and Forensics": [
+        "Speech Recognition",
+        "Speech Enhancement",
+        "Speech Signal Processing",
+        "Speaker Speech Separation",
+        "Audio Processing",
+        "Neural Signal Processing"
+    ],
+    "Parallel & Distributed Computing": [
+        "Machine Learning",
+        "Machine-Person Interoperability",
+        "Brain Machine Interface",
+        "Healthy Brain Ageing"
+    ],
+    "Data Management & Analytics": [
+        "Disruptive Technology and Materials",
+        "Computer Networks and Communications",
+        "Data Management",
+        "Image and Video Analytics",
+        "Hardware and Embedded Systems",
+        "Urban Planning and Human Centered Design",
+        "Cyber Security and Forensics",
+        "Computer Vision and Sensing",
+        "Logic and Algorithms",
+        "Verification and Formal Methods",
+        "Responsible Banking and Investment",
+        "Trust and Preference",
+        "Art, Design and Media",
+        "Systems and Engineering Management",
+        "Robotics and Intelligent Systems",
+        "Business and Management",
+        "Linguistics and Multilingual Studies",
+        "Financial Engineering & Risk Management"
+    ]
+}
