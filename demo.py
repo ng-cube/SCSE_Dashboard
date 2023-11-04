@@ -4,7 +4,7 @@ import numpy as np
 from utils import get_list_of_keywords, find_name_using_keyword, get_keywords_given_name,find_num_contributions_using_name
 from utils import plot_year_of_involvement, plot_scse_bar, display_overall_graph, display_individual_graph
 from utils import display_publications_by_year, display_publications_by_type, display_top_n_keywords, faculty_intro
-from utils import get_research_areas, display_top_coauthors
+from utils import get_research_areas, display_top_coauthors,display_word_cloud, display_treemap, conference_count_plot
 
 # Config
 st.set_page_config(
@@ -49,11 +49,11 @@ with st.sidebar:
 tab1, tab2 = st.tabs(["💻SCSE", "✒️Professors"])
 
 with tab1:
+    display_treemap()
     col1, col2 = st.columns(2,gap='large')
     with col1:
         with st.expander("Introduction"):
             st.markdown(faculty_intro)
-
         st.markdown(f"#### Research Areas")
         st.markdown(f"**Expand the broader area to reveal the list of associated keywords.**")
         for broader_area, specific_areas in get_research_areas().items():
@@ -63,7 +63,6 @@ with tab1:
 
         display_overall_graph()
    
-       
 
     with col2:
         subcol4,subcol5,subcol6 = st.columns(3)
@@ -139,6 +138,7 @@ with tab2:
                 print("Sorry, currently no publication data is found.")
             else:
                 st.subheader("Publications",divider='rainbow')
+                
                 subtab1, subtab2 = st.tabs(["By year","By type"])
                 with subtab1:
                     display_publications_by_year(selected_professor)
@@ -159,5 +159,7 @@ with tab2:
                 st.metric("Top Conferences",top_conference_count)
             count_publications = find_num_contributions_using_name(selected_professor)    
             plot_year_of_involvement(count_publications[0]) 
+            conference_count_plot(selected_professor)
+            display_word_cloud(selected_professor)
             display_top_coauthors(selected_professor)
             display_individual_graph(selected_professor)
