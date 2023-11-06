@@ -29,7 +29,7 @@ page_intro = """
 Welcome to the NTU School of Computer Science and Engineering Faculty Dashboard. 
 Here, you can explore information about our esteemed professors!
 """
-intro_with_icons = f"{smiley}{hi}{page_intro}{star}  \n Please begin by choosing the topic(s) from the sidebar. You may view the professors' individual profiles on the professor tab."
+intro_with_icons = f"{smiley}{hi}{page_intro}{star}  \n You may choose some topics using the sidebar. The professors' individual profiles can be viewed under the professor tab, and you may view multiple profiles under the tab called 'View More'."
 st.title("SCSE Dashboard")
 st.markdown(intro_with_icons, unsafe_allow_html=True)
 
@@ -45,8 +45,7 @@ with st.sidebar:
         st.write(item)
 
 
-# Create two tabs
-tab1, tab2 = st.tabs(["💻SCSE", "✒️Professors"])
+tab1, tab2, tab3 = st.tabs(["💻SCSE", "✒️Professors", "⭐View More"])
 
 with tab1:
     display_treemap()
@@ -160,6 +159,99 @@ with tab2:
             count_publications = find_num_contributions_using_name(selected_professor)    
             plot_year_of_involvement(count_publications[0]) 
             conference_count_plot(selected_professor)
-            display_word_cloud(selected_professor)
+            display_word_cloud(selected_professor,key='individual')
             display_top_coauthors(selected_professor)
             display_individual_graph(selected_professor)
+
+#======================================================================================
+    with tab3:
+        subcol7, subcol8 = st.columns(2,gap="large")
+        with subcol7:
+            if list_of_professors:
+                selected_professor_a = st.selectbox("Please select a professor:", list_of_professors, key='select_a')
+            else:
+                selected_professor_a = st.selectbox("Please select a professor:", data['Full Name'], key='select_a')
+            if selected_professor_a:
+                professor_data_a = data[data['Full Name'] == selected_professor_a]         
+                biography_a = professor_data_a['biography'].iloc[0]
+
+                citation = professor_data_a['Citations (All)'].iloc[0] 
+                no_citation = int(citation) if not pd.isna(citation) else None
+
+                publications_count = professor_data_a['publications_count'].iloc[0]
+                publications_count = int(publications_count) if not pd.isna(publications_count) else None
+                
+                top_conference_count = professor_data_a['top_conference_count'].iloc[0]
+                top_conference_count = int(top_conference_count) if not pd.isna(top_conference_count) else None
+            else:
+                professor_data_a = data
+            if professor_data_a.empty:
+                st.warning("No professor found with the given selection.")
+
+            with st.expander("Research Interest"):
+                research_interest_a = get_keywords_given_name(selected_professor_a)
+                for item in research_interest_a:
+                    st.markdown(f"- **{item}**")
+            with st.expander("Biography"):
+                st.write(biography_a)
+              # Display bar chart   
+            if selected_professor_a in ['Sourav Saha Bhowmick','Tay Kian Boon','Ke Yiping, Kelly']:
+                print("Sorry, currently no publication data is found.")
+            else:
+                subcol1,subcol2,subcol3 = st.columns(3)
+                with subcol1:
+                    st.metric("Citations",no_citation)
+                with subcol2:
+                    st.metric("Publications",publications_count)
+                with subcol3:
+                    st.metric("Top Conferences",top_conference_count)
+                count_publications = find_num_contributions_using_name(selected_professor_a)    
+                plot_year_of_involvement(count_publications[0]) 
+                conference_count_plot(selected_professor_a)
+                display_word_cloud(selected_professor_a,key='wordcloud_a')
+     
+        with subcol8:
+            if list_of_professors:
+                selected_professor_b = st.selectbox("Please select a professor:", list_of_professors, key='select_b')
+            else:
+                selected_professor_b = st.selectbox("Please select a professor:", data['Full Name'], key='select_b')
+            if selected_professor_b:
+                professor_data_b = data[data['Full Name'] == selected_professor_b]         
+                biography_b = professor_data_b['biography'].iloc[0]
+
+                citation = professor_data_b['Citations (All)'].iloc[0] 
+                no_citation = int(citation) if not pd.isna(citation) else None
+
+                publications_count = professor_data_b['publications_count'].iloc[0]
+                publications_count = int(publications_count) if not pd.isna(publications_count) else None
+                
+                top_conference_count = professor_data_b['top_conference_count'].iloc[0]
+                top_conference_count = int(top_conference_count) if not pd.isna(top_conference_count) else None
+            else:
+                professor_data_b = data
+            if professor_data_b.empty:
+                st.warning("No professor found with the given selection.")
+
+            with st.expander("Research Interest"):
+                research_interest_b = get_keywords_given_name(selected_professor_b)
+                for item in research_interest_b:
+                    st.markdown(f"- **{item}**")
+            with st.expander("Biography"):
+                st.write(biography_b)
+              # Display bar chart   
+            if selected_professor_b in ['Sourav Saha Bhowmick','Tay Kian Boon','Ke Yiping, Kelly']:
+                print("Sorry, currently no publication data is found.")
+            else:
+                subcol1,subcol2,subcol3 = st.columns(3)
+                with subcol1:
+                    st.metric("Citations",no_citation)
+                with subcol2:
+                    st.metric("Publications",publications_count)
+                with subcol3:
+                    st.metric("Top Conferences",top_conference_count)
+                count_publications = find_num_contributions_using_name(selected_professor_b)    
+                plot_year_of_involvement(count_publications[0]) 
+                conference_count_plot(selected_professor_b)
+                display_word_cloud(selected_professor_b,key='wordcloud_b')
+            
+            

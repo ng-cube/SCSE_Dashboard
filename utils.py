@@ -172,7 +172,7 @@ def display_publications_by_type(name):
                                     f"**URL:** {paper['url']}")
 
 
-def display_word_cloud(name):
+def display_word_cloud(name,key):
     st.subheader("Publication Keywords")
     data = find_publications(name)
     if not data['publications']:
@@ -184,7 +184,8 @@ def display_word_cloud(name):
         "Select the range of years to display publication keywords",
         min_value=min(all_years),
         max_value=max(all_years),
-        value=(min(all_years), max(all_years))
+        value=(min(all_years), max(all_years)),
+        key=key
     )
 
     # Generate a word cloud for the selected range of years
@@ -312,12 +313,13 @@ def build_adjacency_matrix():
 
 
 def display_overall_graph():
-    G, _ = build_adjacency_matrix()
+    G, adjacency_matrix = build_adjacency_matrix()
 
-    nx.set_node_attributes(G, 3, "prop")
+    nx.set_node_attributes(G, adjacency_matrix,"type")
     nx.set_edge_attributes(G, 5, "edge_prop")
 
-    fig = ig.plot(G,title="SCSE Network Graph", layout="circular", colorscale='YlOrRd')
+    fig = ig.plot(G,title="SCSE Network Graph", layout="circular", 
+                  colorscale='YlOrRd')
     st.plotly_chart(fig, use_container_width=True)
 
 
@@ -364,7 +366,6 @@ def display_individual_graph(professor_name):
 
     fig = ig.plot(subgraph, title=f"{professor_name}'s graph",
             node_label_position="top center",
-            #edge_text=["weight"])
             edge_label="weight", 
             edge_label_position="bottom center",
             layout="circular",
